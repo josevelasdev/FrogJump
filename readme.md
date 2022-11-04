@@ -1,17 +1,17 @@
 # Frog Crossing a River
 
-The problem is about a frog trying to cross a river, and it requires validating each jump it will take. Therefore it is required to have a helperJumpCheck(); inside of this will have to validate each path according to the jump options that the frog has Always set. In each iteration, the frog will have at least three options for jumping, given by the value of jump, and these can be:
+The problem is about a frog trying to cross a river, and it requires validating each jump it will take. Therefore it is required to have a `helperJumpCheck()`; inside of this will have to validate each path according to the jump options that the frog has Always set. In each iteration, the frog will have at least three options for jumping, given by the value of jump, and these can be:
 
 - k - 1
 - k
 - k + 1
 
   To validate in each iteration if the jump that the frog will make will allow us to get to the end, necessarily before taking the jump we need recursively check if, by doing so, we can reach the end.
-  The helperJumpCheck() is going to receive three params:
+  The `helperJumpCheck()` is going to receive three params:
 
-- stones: it's the array with the path
-- lastIndex: indicate the last position in the array to determine the jump and his cost
-- currentIndex: shows the current index to calculate the value of the previous jump and the new jump
+- `stones`: it's the array with the path
+- `lastIndex`: indicate the last position in the array to determine the jump and his cost
+- `currentIndex`: shows the current index to calculate the value of the previous jump and the new jump
 
 ```javascript
 function helperJumpCheck(stones, lastIndex, currentIndex) {
